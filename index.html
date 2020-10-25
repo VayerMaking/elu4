@@ -1,13 +1,7 @@
 
 <!DOCTYPE html>
 <html>
-<!-- start of web manifest -->
-<link rel="manifest" href="/manifest.json">
-<!-- end of web manifest -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- theme-color -->
-<meta name="theme-color" content="#fff" />
-<!-- end-theme-color -->
+
 <style>
 body {
   font-family: Arial;
@@ -107,18 +101,6 @@ img {
 </style>
 <body>
 
-  <!-- register service worker -->
-          <script>
-            if ('serviceWorker' in navigator)
-            {
-            window.addEventListener('load', function() {
-              navigator.serviceWorker.register('/service-worker.js')
-              .then(function() { console.log("Service Worker Registered, Cheers to PWA Fire!"); });
-            }
-            );
-          }
-          </script>
-   <!-- end of service worker -->
 
 <h2 style="text-align:center">Slideshow Gallery</h2>
 
