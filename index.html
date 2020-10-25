@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta name="viewport" content="">
 
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="../package/swiper-bundle.min.css">
@@ -61,7 +61,7 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <!-- Required swiper-lazy class and image source specified in data-src attribute -->
-        <img data-src="images/math/matU4ebnik1.bmp" class="swiper-lazy">
+        <img data-src="images/math/matU4ebnik1.bmp" id= "sky" class="swiper-lazy">
         <!-- Preloader image -->
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
       </div>
@@ -115,6 +115,32 @@
 
     });
   </script>
+  <script>
+    function zoomin(){
+        var myImg = document.getElementById("sky");
+        var currWidth = myImg.clientWidth;
+        if(currWidth == 500){
+            alert("Maximum zoom-in level reached.");
+        } else{
+            myImg.style.width = (currWidth + 50) + "px";
+        }
+    }
+    function zoomout(){
+        var myImg = document.getElementById("sky");
+        var currWidth = myImg.clientWidth;
+        if(currWidth == 50){
+            alert("Maximum zoom-out level reached.");
+        } else{
+            myImg.style.width = (currWidth - 50) + "px";
+        }
+    }
+</script>
+</head>
+<body>
+    <p>
+        <button type="button" onclick="zoomin()">Zoom In</button>
+        <button type="button" onclick="zoomout()">Zoom Out</button>
+    </p>
 </body>
 
 </html>
