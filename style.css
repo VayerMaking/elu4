@@ -38,3 +38,24 @@
     left: 50%;
     top: 50%;
   }
+  .button {
+    background-color: #9bb0a0;
+    border: none;
+    color: black;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      border: none;
+    }
+  }
