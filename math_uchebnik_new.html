@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Math</title>
+  <meta name="viewport" content="">
+  <link rel="stylesheet" href="../package/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img data-src="images/math_uchebnik_new/1.jpg"   class="swiper-lazy">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+      <div class="swiper-slide">
+        <img data-src="images/math_uchebnik_new/2.jpg" class="swiper-lazy">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+      <div class="swiper-slide">
+        <img data-src="images/math_uchebnik_new/3.jpg"   class="swiper-lazy">
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination swiper-pagination-white"></div>
+
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+
+  <script src="../package/swiper-bundle.min.js"></script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      // Enable lazy loading
+      lazy: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+    });
+  </script>
+
+</body>
+
+</html>
